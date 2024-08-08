@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Alt + X Alert Extension",
+    "version": "1.0",
+    "description": "Triggers an alert when Alt + X is pressed on example.com.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://example.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
